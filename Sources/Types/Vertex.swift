@@ -24,6 +24,9 @@ public struct Vertex{
 		self.normals = normals
 		self.texCoord = texCoord
 	}
+}
+
+extension Vertex: sizeable{	
 
 	static public var vertexDescriptor: MTLVertexDescriptor = {
 		let result = MTLVertexDescriptor()
