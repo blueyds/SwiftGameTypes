@@ -1,6 +1,7 @@
 import Foundation
 import Metal
 import simd
+import Sizeable
 
 public struct Vertex{
 	public var position: SIMD3<Float>

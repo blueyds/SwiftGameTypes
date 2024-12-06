@@ -1,7 +1,7 @@
 import simd
 import Metal
 
-typealias GameColor = SIMD4<Float>
+public typealias GameColor = SIMD4<Float>
 
 extension GameColor{
 	public var r: Float{
@@ -28,12 +28,6 @@ extension GameColor{
 
 }
 
-
-extension GameColor: CustomStringConvertible{
-	public var description: String {
-		"R" + r.description + "_G" + g.description + "_B" + b.description + "_A" + a.description
-	} 
-}
 extension GameColor{
 	static public var randomColor: GameColor{
 		let r: Float = .random(in: 0...1)
